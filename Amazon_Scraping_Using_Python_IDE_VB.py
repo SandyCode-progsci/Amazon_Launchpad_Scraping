@@ -51,7 +51,7 @@ def extract_records_1(results):
 def Generate_CSV():
     x = datetime.datetime.now()
     timestamp=x.strftime("%d%m%y%H%M_%f")
-    filename='C:\\Users\\sandeshmo\\Downloads\\13-Web-Scraping\\AmazonTodaysDeal_{}.csv'.format(timestamp)
+    filename='C:\\Users\\<YourUserName>\\Downloads\\Web-Scraping\\AmazonTodaysDeal_{}.csv'.format(timestamp)
     with open(filename, 'w', newline= '', encoding='utf-8') as f:
         #writer=csv.writer(f, quoting=csv.QUOTE_NONE)
         writer=csv.writer(f)
@@ -71,7 +71,7 @@ chrome_options = webdriver.ChromeOptions()      # To pass arguments during acces
 #argument to switch off suid sandBox and no sandBox in Chrome 
 
 chrome_options.add_argument('--no-sandbox')
-driver = webdriver.Chrome(executable_path=r'D:\SandeshSadanandMore\Python\Udemy\Chrome Driver\chromedriver.exe', options=chrome_options)
+driver = webdriver.Chrome(executable_path=r'D:\SanMore\Python\Udemy\Chrome Driver\chromedriver.exe', options=chrome_options)
 
 '''
 
